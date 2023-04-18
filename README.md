@@ -5,7 +5,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/it-works-why.svg)](https://forthebadge.com)
 
 
-Source code for my website and the PossumBlog CMS. Will have to split both in the future.
+Source code for the PossumBlog CMS.
 
 # Setting up
 As of the development phase, use XAMPP to set up and test PossumBlog.
@@ -21,7 +21,7 @@ These environment variables are required. The user should have full perms to the
 
 Now, copy the folder website-main into htdocs. You can rename it to website for simplicity. 
 
-Next up, import the database into MySQL, located in /database/website.sql, the script will create a database named "website". The db contains a user michal with a password "zaq1@WSX" used for testing.
+Next up, import the database into MySQL, located in /database/website.sql, the script will create a database named "website". The db contains a user admin with a password "zaq1@WSX" used for testing. The admin_create.php file under possumadmin can also create a user, and should be deleted should you want to put PossumBlog online (you shouldn't at the moment)
 
 Now navigate to localhost/website/blog.php, and you should see placeholder posts, one includes an image. If you see this - PossumBlog has been set up correctly.
 
