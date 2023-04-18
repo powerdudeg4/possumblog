@@ -1,0 +1,20 @@
+CONTENTS:
+./css/ - contains CSS files used throught the website
+./database/ - contains the database used in the prototype
+	contains a user "admin" with "zaq1@WSX" as the password
+./img/ - contains all images used in the website
+	! Note - blog images should be moved to a different directory
+./possumadmin/ - contains admin elements of PossumBlog in a WiP stage.
+	./admin_create.php - creates a user, has no security to it and should be removed before releasing possumblog live
+	./permissions.php - contains skeletal code for the permissions manager, however, said permissions are not used anywhere at this time
+	*later revisions will use these permissions accordingly, ./Permissions_draft.txt includes a overview
+./script/ - contains javascript code used throught possumblog
+	./postmanager.js - contains text-editing code (the formatting options as of now)
+	./script.js - prevents a form resubmission dialog from opening in admin parts of the page
+./*.html - legacy parts of my website taken from powerdudeg4@neocities.org
+./admin_login.php - contains the admin login page
+./admin_panel.php - contains the main page of the admin panel
+./blog.php - contains the public blog page
+./create_entry.php - post creator (mostly finished)
+./manage_posts.php - post editor (broken and will have to be fixed ASAP)
+./preview_posts.php - part of the admin panel, shows preview only posts in the database

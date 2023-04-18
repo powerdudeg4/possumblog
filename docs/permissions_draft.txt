@@ -1,0 +1,21 @@
+Permission structure:
+	CREATE MODIFY ADMINISTRATIVE
+		Special:
+			root: Has always all privileges
+CREATE:
+	0: Cannot create any posts
+	1: Can create preview-only posts
+	2: Can create posts
+MODIFY:
+	0: Cannot modify any posts
+	1: Can modify posts but administrators need to approve of changes
+	2: Can modify posts and publish changes immediately
+ADMINISTRATIVE:
+	0: User blocked from signing in
+	1: Standard user
+	2: Content administrator
+		Can approve of changes and move posts from preview-only to public
+	3: Website administrator
+		Can do anything, including add new administrator users
+	4: root?
+		Instead of having a text value of root, "224" could do the same.
