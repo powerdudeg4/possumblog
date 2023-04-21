@@ -59,15 +59,6 @@ if (isset($_COOKIE['login'])) {
 	<br><input type="submit" name="preview" value="Preview"> 
 	<input type="submit" name="publish" value="Publish"><br><br><br><br><br>
 	</form>
-
-
-<?php
-if(!isset($_COOKIE['login'])) {
-  header( "Location: ../blog.php" );
-}elseif ($_COOKIE['login']!="michal") {
-  header( "Location: ../blog.php" );
-}
-?>
 <?php
 if(isset($_POST['preview'])){
 $conn = mysqli_connect(apache_getenv("POSSUMBLOGDATABASESRV"), apache_getenv("MYSQL_USER"), apache_getenv("MYSQL_PASSWORD"), apache_getenv("POSSUMBLOGDATABASE"));
